@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Bebas Neue', 'Open Sans', sans-serif;
+}
+
+@theme {
+  --color-custom-black: hsl(0, 0%, 5%);
+  --color-custom-gray: #aaaaaa;
+}
