@@ -32,7 +32,7 @@ export default [
         { allowConstantExport: true },
       ],
       'semi': ['error', 'always'],
-      'max-len': ['error', { 'code': 100 }],
+      'max-len': ['error', { 'code': 100, ignoreComments: true}],
     },
   },
 ];

@@ -1,4 +1,5 @@
-import { INFO, SECTIONS } from "@config/strings";
+import { INFO, SECTIONS, WORK_EXPERIENCE } from "@config/strings";
+import WorkExperienceSection from "@components/WorkExperienceSection";
 
 function Portfolio() {
   return (
@@ -7,8 +8,9 @@ function Portfolio() {
         <div className="flex flex-col select-none">
           <h1 className="text-white text-7xl">{INFO.name}</h1>
           <h3 className="text-white text-2xl">{INFO.title}</h3>
+          <p className="text-custom-gray text-sm mt-5 font-[Poppins] text-left">{INFO.description}</p>
         </div>
-        <div className="flex flex-col mt-20 gap-y-0 cursor-pointer select-none">
+        <div className="flex flex-col mt-16 gap-y-0 cursor-pointer select-none">
           {SECTIONS.map((section) => (
             <span
               key={section.title}
@@ -18,24 +20,17 @@ function Portfolio() {
             </span>
           ))}
         </div>
+        <div className="absolute flex bottom-20 gap-x-4 cursor-pointer select-none">
+          <div>
+            <span className="text-custom-gray hover:text-white">EMAIL</span>
+          </div>
+          <div>
+            <span className="text-custom-gray hover:text-white">LINKEDIN</span>
+          </div>
+        </div>
       </section>
-      <section className="flex-1 pt-28 h-[20000px] select-none">
-        <div className="select-none gap-1 mb-40">
-          <h2 className="text-white text-3xl">About</h2>
-          <p className="text-custom-gray text-sm font-[Open_Sans] mt-4 text-left">{INFO.description}</p>
-        </div>
-        <div className="select-none gap-1 mb-40">
-          <h2 className="text-white text-3xl">About</h2>
-          <p className="text-custom-gray text-sm font-[Open_Sans] mt-4 text-left">{INFO.description}</p>
-        </div>
-        <div className="select-none gap-1 mb-40">
-          <h2 className="text-white text-3xl">About</h2>
-          <p className="text-custom-gray text-sm font-[Open_Sans] mt-4 text-left">{INFO.description}</p>
-        </div>
-        <div className="select-none gap-1 mb-40">
-          <h2 className="text-white text-3xl">About</h2>
-          <p className="text-custom-gray text-sm font-[Open_Sans] mt-4 text-left">{INFO.description}</p>
-        </div>
+      <section className="flex-1 pt-28 select-none">
+        <WorkExperienceSection />
       </section>
     </div>
   );

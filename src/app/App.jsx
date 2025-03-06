@@ -3,7 +3,7 @@ import Portfolio from "@components/Portfolio";
 
 function App() {
   return (
-    <div className="bg-custom-black">
+    <div className="bg-custom-black scrollbar">
       <Portfolio />
     </div>
   );
