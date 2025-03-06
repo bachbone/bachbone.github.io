@@ -30,5 +30,5 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #c0a0b9;
+  background: var(--color-white);
 }
